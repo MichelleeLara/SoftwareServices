@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: #c2ab92;
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /*===== Margenes =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+body p {
+    letter-spacing: 1.08px;
+}
+
+.simbol-logo {}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+.h-header {
+    padding: 1.4vw;
+    box-shadow: 0 8px 29px #3c3c3c6b;
+    font-size: 1vw;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.h-header li a {
+    transition: ease .3s;
+}
+
+.h-header li a:hover {
+    color: var(--first-color);
+}
+
+.nav-logo:hover .simbol-logo {
+    color: var(--first-color);
+    transition: ease-in .2s;
+}
+
+.h-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Home-about */
+
+.home {
+    width: 100%;
+    height: 35vw;
+    background-image: linear-gradient(180deg, rgba(18, 18, 18, 0.5) 0%, #121212 100%), url(/assets/img/about-init.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home {
+    width: 80%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+    padding-right: 40vw;
+    color: white;
+}
+
+.container-home h4 {
+    font-size: .8vw;
+    font-weight: bolder;
+    color: var(--first-color);
+}
